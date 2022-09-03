@@ -1,0 +1,28 @@
+<?php 
+     if (empty($_get['FirstName']) && !empty($_get['LastName']))
+?>
+<!DOCTYPE html>
+<html>
+    <style>
+        h1{
+            text-align: center ;
+        }
+        form{
+            text-align: center ;
+            width: "2000px"
+        }
+    </style>
+    <head>
+        <title> Register</title>
+    </head>
+    <body>
+        <h1> Signup </h1>
+        <form action="register.php" method="get">
+          <label for="FirstName">Enter Your Name:</label><br>
+          <input type="text" placeholder="First Name">
+          <label for="LastName"></label>
+          <input type="text" placeholder="Last Name"><br>
+          <input style="width: 340px" type="submit" value="submit">
+        </form>
+    </body>
+</html>
